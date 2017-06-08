@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  practicecorewebapp:
+    image: practicecorewebapp
+    build:
+      context: ./PracticeCoreWebApp
+      dockerfile: Dockerfile
