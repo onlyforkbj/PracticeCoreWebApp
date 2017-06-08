@@ -2,6 +2,10 @@ version: '2'
 
 services:
   practicecorewebapp:
+    environment:
+    - GraphUrl=graph.buildwemore.net
+    - PeopleServiceUrl=people-service:5000
+    - ASPNETCORE_ENVIRONMENT=Development
     image: practicecorewebapp
     build:
       context: ./PracticeCoreWebApp
